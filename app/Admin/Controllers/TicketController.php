@@ -184,6 +184,7 @@ class TicketController extends Controller
     {
         $form = new Form(new Ticket);
 
+
         $form->text('ticket_article', 'Номер заявки')->default(mt_rand(100000, 999999))->placeholder(' ');
         $form->text('fio', 'ФІО')->placeholder(' ');
         $form->mobile('phone', 'Телефон')->options(['mask' => '+38(999) 999 99 99'])->placeholder(' ');
